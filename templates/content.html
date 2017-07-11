@@ -7,7 +7,7 @@
     <!--配置视窗-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     <title>后台内容</title>
-{#    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">#}
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">-->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/bootstrape-colleen.css">-->
     <script src="{{ url_for('static', filename='js/jquery-3.1.0.min.js')}}"></script>
@@ -33,10 +33,14 @@
         <!--导航的制作-->
         <div class="navbar-collapse collapse" id="col">
             <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('.backend')}}"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台管理</a></li>
-                <li><a href="{{ url_for('.user')}}"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
-                <li class="active"><a href="{{ url_for('.content')}}"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-                <li><a href="{{ url_for('.tag')}}"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+                <li><a href="{{ url_for('.backend')}}"><span
+                        class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台管理</a></li>
+                <li><a href="{{ url_for('.user')}}"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+                </li>
+                <li class="active"><a href="{{ url_for('.content')}}"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a>
+                </li>
+                <li><a href="{{ url_for('.tag')}}"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -225,7 +229,8 @@
 
                 <nav aria-label="..." class="pull-right">
                     <ul class="pagination">
-                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+                        </li>
                         <li class="active"><a href="#">1</a></li>
                         <li class=""><a href="#">2</a></li>
                         <li class=""><a href="#">3</a></li>
