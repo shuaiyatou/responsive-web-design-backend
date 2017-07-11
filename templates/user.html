@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <!--<link rel="stylesheet" href="css/bootstrape-colleen.css">-->
     <script src="{{ url_for('static', filename='js/jquery-3.1.0.min.js') }}"></script>
-    {#    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>#}
+    <!--{#    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>#}-->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
     <!--<script src="js/colleen.js"></script>-->
@@ -82,8 +82,8 @@
                 <div class="list-group">
                     <a href="#" class="active list-group-item">用户管理</a>
                     <a href="{{ url_for('.user_search') }}" class="list-group-item">用户搜索</a>
-                    <a href="#" class="list-group-item" role="button" data-toggle="modal"
-                       data-target="#myModal">用户管理</a>
+                    <a href="{{ url_for('.add_title') }}" class="list-group-item" role="button" data-toggle="modal"
+                       data-target="#myModal">添加文章</a>
                 </div>
             </div>
 
