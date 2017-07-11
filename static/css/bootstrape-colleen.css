@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar-default{
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(50,50,50,0.88);
+}
+.navbar-default .navbar-brand{
+    color: darkseagreen;
+    font-size: 30px;
+    font-weight: bold;
+    height:70px;
+    line-height: 35px;
+
+}
+
+
+.navbar-default .navbar-nav>li>a{
+    font-weight: bold;
+    color:#666;
+    height:70px;
+    line-height: 35px;
+
+}
+.navbar-default .navbar-toggle{
+    border-color: darkseagreen;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: darkseagreen;
+}
+
+/*home*/
+#home{
+    margin-top:70px;
+    width:100%;
+    background: url("../img/home-bg.jpg");
+    text-align: center;
+    color:white;
+}
+
+#home .col-md-10{
+    margin-bottom: 50px;
+}
+
+#home .h-one{
+    margin-top: 80px;
+    font-weight: bolder;
+}
+
+#home p{
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#home img{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width:550px;
+    height:300px;
+}
+
+
+
+/*论坛*/
+#luntan .col-md-4{
+    margin: 10px 0;
+}
+
+#luntan .col-md-4:hover{
+    background-color: #f1f1f1;
+}
+
+#luntan a{
+    text-decoration: none;
+}
+
+#luntan a:hover{
+    background-color: lightgray;
+}
+
+#luntan h3{
+    color: black;
+}
+#luntan p{
+    color: grey;
+}
+
+/*html5*/
+#html5,#shizhan {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+}
+
+#html5 span,#shizhan span{
+    color: white;
+    background-color:yellowgreen;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 30px;
+}
+#html5 .col-md-6,#shizhan .col-md-6{
+    margin:30px 0px;
+}
+
+/*lesson*/
+#lesson img{
+    width: 275px;
+    height:174px;
+}
+
+#lesson .col-md-3{
+    margin: 10px 0;
+    text-align: center;
+}
+
+#lesson .course{
+    background-color:whitesmoke;
+}
+
+
+#lesson .btn{
+    width: 100px;
+    border-radius: 0;
+    transition:all 1s;
+    margin: 10px 0px;
+}
+#lesson .btn:hover{
+    background-color: white;
+    color: grey;
+    border:1px solid #96dfcc;
+}
+#lesson .first-row{
+    text-align: center;
+    font-weight: bold;
+    color:darkgray;
+}
+#lesson .course img,#html5 img,#shizhan img{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*app*/
+#app{
+    padding:50px 0;
+}
+#app h2{
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+#app .btn{
+    margin-right: 20px;
+    border-radius: 0;
+    background-color: #96dfcc;
+    border:none;
+
+}
+
+#app .btn span{
+    margin-right:15px ;
+}
+
+#app .btn:hover{
+
+}
+
+#app p{
+   font-weight: bold;
+    margin: 20px 0;
+}
+
+#contact{
+    background: url("../img/contact-bg.png") no-repeat grey ;
+    background-size: cover;
+    color: white;
+}
+
+#contact .bg{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+#contact .container{
+    padding: 50px 0px;
+}
+
+#contact p{
+    margin: 20px 0;
+}
+
+#contact p:nth-of-type(1){
+    margin-bottom: 50px;
+}
+
+#contact span{
+    margin-right: 20px;
+}
+
+#contact div.col-md-6:nth-child(2) div{
+    margin:15px 0px;
+}
+
+#contact div.col-md-6:nth-child(2) div input{
+    border-radius:0 ;
+}
+
+#contact input[type='submit']{
+    background-color:lightgreen;
+    transition: all 1s;
+}
+#contact input[type='submit']:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+/*footer*/
+#footer p{
+    margin: 15px 0;
+    font-weight: 400;
+}

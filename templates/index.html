@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--开启ie8大的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="edge"/>
+    <!--配置视窗-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title>bootstrape的个人网站制作</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrape-colleen.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery-3.1.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!--引入单页导航-->
+    <script  src="{{ url_for('static', filename='js/jquery.singlePageNav.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/colleen1.js') }}"></script>
+
+</head>
+
+<body>
+<!--制作导航-->
+<nav class="navbar navbar-default navbar-fixed-top" id="navigator">
+    <div class="container">
+        <!--小屏幕的导航和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#col">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{{ url_for('static', filename='') }}" class="navbar-brand">Eshan-colleen</a>
+        </div>
+
+        <!--导航的制作-->
+        <div class="navbar-collapse collapse" id="col">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#luntan">论坛</a></li>
+                <li><a href="#html5">前端开发</a></li>
+                <li><a href="#shizhan">bootstrape实战</a></li>
+                <li><a href="#lesson">省时课程</a></li>
+                <li><a href="#app">移动app</a></li>
+                <li><a href="#contact">联系我哦</a></li>
+                <li><a id="jump">后台管理</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+<!--home制作-->
+<section id="home">
+    <div id="bg">
+        <div class="container">
+            <div class="row wow rubberBand">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 class="h-one">welcome to colleen's webpage</h1>
+                    <p>欢迎大家进入colleen的网站，多来这里鼓励鼓励我哦</p>
+                    <p>欢迎喜欢前端的小伙伴们来这里留言，我们为你一起讨论前端的知识吧，木马</p>
+                    <!--<img src="img/bg_img.jpg" class="img-responsive center-block wow slideInUp" alt="hello  * 。*">-->
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--前端开发交流平台-->
+<section id="luntan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center wow rotateIn">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/a.png') }}" class="img-responsive center-block" alt="">
+                    <h3>前端SEO论坛交流</h3>
+                    <p>前端SEO优化论坛，交流平台,有兴趣的童鞋快来一起交流吧</p>
+                </a>
+
+            </div>
+            <div class="col-md-4 text-center wow rotateIn">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/b.png') }}" class="img-responsive center-block" alt="">
+                    <h3>前端css hack论坛交流</h3>
+                    <p>前端css hack交流平台，吸纳八方见解，快来一起交流吧</p>
+                </a>
+            </div>
+
+            <div class="col-md-4 text-center wow rotateIn">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/i.png') }}" class="img-responsive center-block" alt="">
+                    <h3>前端兼容性论坛交流</h3>
+                    <p>实战案例技术交流论坛，有兴趣的童鞋快来一起交流吧</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--html5-->
+<section id="html5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  wow slideInLeft">
+                <h2>HTML5前端开发</h2>
+                <p>一线开发前端工程师，让我们一起完成前端程序员的华丽升级</p>
+                <p><span class="glyphicon glyphicon-grain"></span>使用HTML5和CSS3实现绚丽效果</p>
+                <p><span class="glyphicon glyphicon-grain"></span>清晰的语义结构，更高的可读性，利于页面维护</p>
+            </div>
+            <div class="col-md-6  wow slideInRight">
+                <img src="{{ url_for('static', filename='img/html5.jpg') }}" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shizhan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  wow rollIn">
+                <img src="{{ url_for('static', filename='img/Bootstrap.jpg') }}" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-6  wow rollIn">
+                <h2>Bootstrape实战项目研讨</h2>
+                <p>使用bootstrape开发中小型项目，实在是再好不过了，火力全开，全面开展</p>
+                <p><span class="glyphicon glyphicon-grain"></span>使用Bootstrape实现完全响应式实战</p>
+                <p><span class="glyphicon glyphicon-grain"></span>使用bootstrap完美的实现手机端，pc端，和平板端</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lesson">
+    <div class="container" data-wow-delay="0.5s">
+        <div class="row first-row "><h2>课程学习</h2></div>
+        <div class="row">
+            <div class="col-md-3 wow jello" data-wow-delay="0.2s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly1_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success" target="_blank" role="button">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="0.4s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly2_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="0.6s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly3_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="0.8s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly4_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 wow jello" data-wow-delay="1s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly5_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success" target="_blank" role="button">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="1.2s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly6_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="1.2s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly7_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+            <div class="col-md-3 wow jello" data-wow-delay="1.4s">
+                <div class="course">
+                    <img src="{{ url_for('static', filename='img/gly8_.jpg') }}" class="img-responsive" alt="">
+                    <a href="http://www.maiziedu.com" class="btn  btn-success">加入学习</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="app">
+    <div class="container">
+        <div class="row wow slideInUp">
+            <div class="col-md-6">
+                <h2>移动端学习app下载</h2>
+                <p>现在的手机端有很多的很不错的app，我们应该尽可能发挥手机的最大作用，在手机上学习是一个很不错的选择哦
+                所以不管是网站还是app，都应该是响应式的，可已自适应移动端
+                </p>
+
+                <p class="btn btn-success">
+                    <span class="glyphicon glyphicon-download-alt"></span>iphone版
+                </p>
+
+                <p class="btn btn-success">
+                    <span class="glyphicon glyphicon-download-alt"></span>iphone版
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/app-banner.jpg') }}" class="img-responsive" alt="麦子学院">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact us-->
+<section id="contact">
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft">
+                    <h3><span class="glyphicon glyphicon-home"></span>联系我呦</h3>
+                    <p>学习是一个循序渐进的过程，找工作也是学习的一个经历，要保持一个平和的心态，不焦躁，进来我的小网站的小伙伴们，愿你们可以像麦子一样
+                    成熟而不做作，成为将来行业的领头羊。我们一起加油，不骄不躁，放平心态。
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-home"></span>
+                        地址：这只是一个地址啦，地址会随意的变化的
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                        电话：xxx45567865
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        邮箱：shuaiyatou@hotmail.com
+                    </p>
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <form action="">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="你的名字">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="你的邮箱">
+                        </div>
+
+                        <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="标题">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea  class="form-control" placeholder="留言内容"></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="submit" class="form-control" placeholder="提交">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>Copyright &nbsp;2016-2017 <a href="https://shuaiyatou.github.io/">https://shuaiyatou.github.io/</a>colleen的博客</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
